@@ -19,7 +19,27 @@ public class Transacao {
     @Column(name = "Quantidade")
     private BigDecimal quantidade;
 
-    @Enumerated(EnumType.STRING)
-    private EnumType tipo;
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public BigDecimal getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(BigDecimal quantidade) {
+        this.quantidade = quantidade;
+    }
 }
