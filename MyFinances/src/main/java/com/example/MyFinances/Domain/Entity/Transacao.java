@@ -1,4 +1,4 @@
-package com.example.MyFinances.Entity;
+package com.example.MyFinances.Domain.Entity;
 
 
 import jakarta.persistence.*;
@@ -18,6 +18,10 @@ public class Transacao {
 
     @Column(name = "Quantidade")
     private BigDecimal quantidade;
+
+    @ManyToOne
+    @JoinColumn(name = "Usuario_id")
+    private Usuario usuario;
 
     public Long getId() {
         return id;

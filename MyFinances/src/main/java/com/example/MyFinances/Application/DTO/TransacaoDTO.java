@@ -1,11 +1,15 @@
-package com.example.MyFinances.DTO;
+package com.example.MyFinances.Application.DTO;
 
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class TransacaoDTO {
     private String descricao;
     private BigDecimal quantidade;

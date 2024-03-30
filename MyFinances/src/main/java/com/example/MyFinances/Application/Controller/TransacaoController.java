@@ -1,8 +1,8 @@
-package com.example.MyFinances.Controller;
+package com.example.MyFinances.Application.Controller;
 
 
-import com.example.MyFinances.Entity.Transacao;
-import com.example.MyFinances.Service.TransacaoService;
+import com.example.MyFinances.Domain.Entity.Transacao;
+import com.example.MyFinances.Application.Service.TransacaoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

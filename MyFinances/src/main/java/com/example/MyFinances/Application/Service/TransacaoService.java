@@ -1,8 +1,8 @@
-package com.example.MyFinances.Service;
+package com.example.MyFinances.Application.Service;
 
 
-import com.example.MyFinances.Entity.Transacao;
-import com.example.MyFinances.Repository.TransacaoRepository;
+import com.example.MyFinances.Domain.Entity.Transacao;
+import com.example.MyFinances.Infrastructure.Repository.TransacaoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
