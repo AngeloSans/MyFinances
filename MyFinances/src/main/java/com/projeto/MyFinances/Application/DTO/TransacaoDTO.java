@@ -1,4 +1,4 @@
-package com.example.MyFinances.Application.DTO;
+package com.projeto.MyFinances.Application.DTO;
 
 
 import lombok.AllArgsConstructor;

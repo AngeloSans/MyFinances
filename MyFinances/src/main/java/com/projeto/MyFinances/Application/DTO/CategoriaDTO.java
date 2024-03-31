@@ -1,4 +1,4 @@
-package com.example.MyFinances.Application.DTO;
+package com.projeto.MyFinances.Application.DTO;
 
 
 import lombok.AllArgsConstructor;
@@ -10,10 +10,8 @@ import javax.validation.constraints.NotBlank;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ContaDTO {
+public class CategoriaDTO {
 
     @NotBlank
     private String nome;
-
-    private double saldo;
 }

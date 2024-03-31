@@ -1,12 +1,16 @@
-package com.example.MyFinances.Domain.Entity;
+package com.projeto.MyFinances.Domain.Entity;
 
 
 import jakarta.persistence.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
 
 @Entity
+@Data
+@NoArgsConstructor
 @Table(name = "Transação")
 public class Transacao {
     @Id

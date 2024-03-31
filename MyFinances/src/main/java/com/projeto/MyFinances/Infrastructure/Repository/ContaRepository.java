@@ -1,7 +1,7 @@
-package com.example.MyFinances.Infrastructure.Repository;
+package com.projeto.MyFinances.Infrastructure.Repository;
 
 
-import com.example.MyFinances.Domain.Entity.Conta;
+import com.projeto.MyFinances.Domain.Entity.Conta;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

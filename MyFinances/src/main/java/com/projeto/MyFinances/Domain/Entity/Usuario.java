@@ -1,11 +1,16 @@
-package com.example.MyFinances.Domain.Entity;
+package com.projeto.MyFinances.Domain.Entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Data
+@NoArgsConstructor
 @Table(name = "Usuario")
 public class Usuario {
 
@@ -22,7 +27,7 @@ public class Usuario {
     @Column(name = "senha")
     private  String senha;
 
-    @OneToMany(mappedBy = "Usuario")
+    @OneToMany(mappedBy = "usuario")
     private List<Conta> conta = new ArrayList<>();
 
 

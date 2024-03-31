@@ -1,8 +1,8 @@
-package com.example.MyFinances.Application.Controller;
+package com.projeto.MyFinances.Application.Controller;
 
 
-import com.example.MyFinances.Domain.Entity.Transacao;
-import com.example.MyFinances.Application.Service.TransacaoService;
+import com.projeto.MyFinances.Domain.Entity.Transacao;
+import com.projeto.MyFinances.Application.Service.TransacaoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
-@Controller
+@RestController
+@RequestMapping("/api/transacao")
 public class TransacaoController {
 
     @Autowired
