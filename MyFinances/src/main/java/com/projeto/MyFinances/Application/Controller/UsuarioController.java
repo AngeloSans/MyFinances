@@ -4,6 +4,7 @@ package com.projeto.MyFinances.Application.Controller;
 import com.projeto.MyFinances.Application.Service.UsuarioService;
 import com.projeto.MyFinances.Domain.Entity.Usuario;
 import com.projeto.MyFinances.Infrastructure.Repository.UsuarioRepository;
+import lombok.experimental.Delegate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -28,6 +29,11 @@ public class UsuarioController {
     @PostMapping
     public Usuario salvarUsuario(@RequestBody Usuario usuario){
         return usuarioService.salvarUsuario(usuario);
+    }
+
+    @DeleteMapping("/{id}")
+    public Usuario deletarUsuario(@PathVariable Long id){
+        return usuarioService.
     }
 
 }

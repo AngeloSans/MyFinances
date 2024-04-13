@@ -18,8 +18,8 @@ public class Conta {
     @Column(name = "nome")
     private String nome;
 
-    @Column(name = "saldo")
-    private double saldo;
+    @Column(name = "quantia")
+    private double quantia;
 
     @ManyToOne
     @JoinColumn(name = "usuario_id")

@@ -21,11 +21,14 @@ public class Usuario {
     @Column(name = "nome")
     private String nome;
 
-    @Column(name = "email")
-    private String email;
+    @Column(name = "salario")
+    private double salario;
 
-    @Column(name = "senha")
-    private  String senha;
+    @Column(name = "quantideGasta")
+    private double quantidadeGasta;
+
+    @Column(name = "valorSobrado")
+    private double valorRestante;
 
     @OneToMany(mappedBy = "usuario")
     private List<Conta> conta = new ArrayList<>();

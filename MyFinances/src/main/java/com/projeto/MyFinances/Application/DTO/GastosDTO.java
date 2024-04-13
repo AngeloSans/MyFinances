@@ -5,12 +5,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
+import javax.validation.constraints.NotBlank;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class TransacaoDTO {
-    private String descricao;
-    private BigDecimal quantidade;
+public class GastosDTO {
+
+    @NotBlank
+    private String nome;
 }
