@@ -14,16 +14,16 @@ public class ContaService {
     @Autowired
     ContaRepository contaRepository;
 
-    //salvar conta
+
     public Conta salvarConta(Conta conta){
         return contaRepository.save(conta);
     }
 
-    //listarcontas
+
     public List<Conta> listarContas(){
         return contaRepository.findAll();
     }
-    //deletar conta
+
     public void deletarConta(long id){
         contaRepository.deleteById(id);
     }
