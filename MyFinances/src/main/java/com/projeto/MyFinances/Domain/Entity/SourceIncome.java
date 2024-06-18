@@ -8,20 +8,18 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name = "Conta")
-public class Conta {
-
+@Table(name = "SourceIncome")
+public class SourceIncome {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "nome")
-    private String nome;
+    private String sourceIncome;
+    private double value;
 
-    @Column(name = "quantia")
-    private double quantia;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id")
+    private User user;
 
-    @ManyToOne
-    @JoinColumn(name = "usuario_id")
-    private Usuario usuario;
+
 }
