@@ -6,5 +6,5 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/Accounts")
-public class AccountsController {
+public class BillsController {
 }

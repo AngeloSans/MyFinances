@@ -4,11 +4,17 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Spends {
+public class BillsDTO {
     private Long id;
-    private String spendName;
-    private double spendValue;
+
+    private String accountName;
+    private Date date;
+    private String formPayment;
+    private double paymentValue;
+    private boolean situation;
 }

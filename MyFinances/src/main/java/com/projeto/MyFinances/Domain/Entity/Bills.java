@@ -6,13 +6,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
-import java.util.List;
 
 @Entity
 @Data
 @NoArgsConstructor
 @Table(name = "Accounts")
-public class Accounts {
+public class Bills {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
