@@ -16,4 +16,9 @@ public class SpendsService {
     public Spends saveSpend(Spends spends){
         return spendsRepository.save(spends);
     }
+
+    public void deleteSpend(Long id){
+
+    }
+
 }

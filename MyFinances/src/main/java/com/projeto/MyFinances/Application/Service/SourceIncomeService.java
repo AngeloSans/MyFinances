@@ -10,4 +10,9 @@ public class SourceIncomeService {
 
     @Autowired
     SourceIncomeRepository sourceIncomeRepository;
+
+    public SourceIncome getByid(Long id){
+        return sourceIncomeRepository.findBy(id);
+    }
+
 }
